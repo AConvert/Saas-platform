@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import LogoHeader from "@/components/HeaderLogo/LogoHeader";
-import Terms from "@/components/Footer/Terms";
+import LogoHeader from "@/app/components/HeaderLogo/LogoHeader";
+import Terms from "@/app/components/Footer/Terms";
 import { Suspense } from "react";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "@/app/components/ui/skeleton";
 
 const inter = Inter({ subsets: ["latin"] });
 

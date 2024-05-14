@@ -10,14 +10,14 @@ import {
   CardContent,
   CardFooter,
   Card,
-} from "@/components/ui/card";
+} from "@/app/components/ui/card";
 
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
+import { Label } from "@/app/components/ui/label";
+import { Input } from "@/app/components/ui/input";
 import { registerUser } from "@/app/data/actions/auth-actions";
-import ZodErrors from "@/components/Errors/ZodErrors";
+import ZodErrors from "@/app/components/Errors/ZodErrors";
 import { useFormStatus } from "react-dom";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Skeleton } from "@/app/components/ui/skeleton";
 
 export function SignupForm() {
   const INITIAL_STATE = {

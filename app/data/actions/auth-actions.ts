@@ -3,10 +3,10 @@
 "use server";
 
 import { z } from "zod";
-import { db } from "@/lib/database/firebase";
+import { db } from "@/app/lib/database/firebase";
 import { doc, getDoc, setDoc } from "firebase/firestore";
 import { redirect } from "next/navigation";
-import { createSession } from "@/lib/session/createSession";
+import { createSession } from "@/app/lib/session/createSession";
 import { v4 } from "uuid";
 
 export async function registerUser(prevState: any, formData: FormData) {
