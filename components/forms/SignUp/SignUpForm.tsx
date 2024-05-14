@@ -17,6 +17,7 @@ import { Input } from "@/components/ui/input";
 import { registerUser } from "@/app/data/actions/auth-actions";
 import ZodErrors from "@/components/Errors/ZodErrors";
 import { useFormStatus } from "react-dom";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export function SignupForm() {
   const INITIAL_STATE = {
@@ -24,6 +25,7 @@ export function SignupForm() {
   };
   const [formState, formAction] = useFormState(registerUser, INITIAL_STATE);
   const { pending } = useFormStatus();
+
   return (
     <div className="w-full max-w-md">
       <form action={formAction}>
